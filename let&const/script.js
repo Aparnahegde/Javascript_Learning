@@ -29,11 +29,11 @@
 // const a;
 // a=10; //SyntaxError: Missing initializer in const declaration
 
-// const a=10;
-// function abc(){
-//     console.log(a);
-// }
-// abc();//10   
+const a=10;
+function abc(){
+    console.log(a);
+}
+abc();//10   
 
 // function abc(){
 //     const a=10;
