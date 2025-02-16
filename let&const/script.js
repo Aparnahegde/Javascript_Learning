@@ -40,3 +40,8 @@
 // }
 // console.log(a);//ReferenceError: a is not defined   
  
+
+// const a=10;
+// a=20; //TypeError: Assignment to constant variable.
+// console.log(a);
+
