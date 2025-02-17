@@ -38,9 +38,17 @@
 // }
 
 
-let a=100;
-function abc(){
-var a=20;           //var is function scoped
-console.log("a inside function "+a);
-}
-abc();  //a inside function 20
+// let a=100;
+// function abc(){
+// var a=20;           //var is function scoped
+// console.log("a inside function "+a);
+// }
+// abc();  //a inside function 20
+
+// const a=100;
+// {
+//     let a=10;  
+//     console.log("a inside block "+a);  //10 
+// }
+// console.log(a);  //100
+
