@@ -1,8 +1,8 @@
 // console.log(a); 
 // let a=10;// ReferenceError: Cannot access 'a' before initialization
 
-// console.log(this.a);                                     //undefined
-// var a=10;
+console.log(this.a);                                     //undefined
+var a=10;
 
 
 // console.log(this.a);                                     //undefined
@@ -29,11 +29,11 @@
 // const a;
 // a=10; //SyntaxError: Missing initializer in const declaration
 
-const a=10;
-function abc(){
-    console.log(a);
-}
-abc();//10   
+// const a=10;
+// function abc(){
+//     console.log(a);
+// }
+// abc();//10   
 
 // function abc(){
 //     const a=10;
