@@ -28,11 +28,19 @@
 
 
 
-const a=20;
-{
-   // const a=10;
-    {
-        // const a=5;
-        console.log("a inside block "+a);  
-    }
+// const a=20;
+// {
+//    // const a=10;
+//     {
+//         // const a=5;
+//         console.log("a inside block "+a);  
+//     }
+// }
+
+
+let a=100;
+function abc(){
+var a=20;           //var is function scoped
+console.log("a inside function "+a);
 }
+abc();  //a inside function 20
