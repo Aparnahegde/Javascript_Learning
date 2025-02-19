@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // function counter() {
+        //     let count = 0;
+        //     return function() {
+        //         count++;
+        //         return count;
+        //     }
+        // }
+
+        // let count = counter();
+        // console.log(count());
+        // console.log(count());
+
+
+
+
+        function counter() {
+            let count = 0;
+            return function() {
+                count++;
+                console.log(count);
+            }
+        }
+        var counter1 = counter();
+        counter1();
+        counter1();
+
+        console.log('counter2 restarts from 1');
+        var counter2 = counter();
+        counter2();
+        counter2();
+        counter2();
+
+    </script>
+</head>
+<body>
+    <h1>ENCAPSULATE</h1>
+</body>
+</html>
