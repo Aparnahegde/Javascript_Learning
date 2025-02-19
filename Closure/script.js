@@ -61,3 +61,48 @@ console.log(z()); // ƒ x(){  var a = 10;  function y(){  console.log(a,b);  }  
 console.log(z()()); // ƒ y(){  console.log(a,b);  }
 console.log(z()()()); // 10 900
 
+
+
+
+// function outest(){
+//     var c=20;
+//     function outer(b){
+//         function inner(){
+//             console.log(a,b,c);
+//         }
+//         var a=10;
+//         return inner;
+//     }
+//     return outer;
+// }
+// outest()("hello")(); // 10 hello 20
+
+
+// function outest(){
+//     var c=20;
+//     function outer(b){
+//         function inner(){
+//             console.log(a,b,c);
+//         }
+//         var a=10;
+//         return inner;
+//     }
+//     return outer;
+// }
+// let a=100;
+// outest()("hello")();// 100 hello 20
+
+
+function outest(){
+    var c=20;
+    function outer(b){
+        function inner(){
+            console.log(a,b,c);
+        }
+       var a=10;
+        return inner;
+    }
+    return outer;
+}
+var a=100;
+outest()("hello")();// 10 hello 20
