@@ -51,4 +51,8 @@ var b=function(param1,param2){
 }   
 
 b(10,20); //10,20 are arguments
+
+
+//First class function
+
  
