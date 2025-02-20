@@ -26,6 +26,15 @@
 //     console.log("namaste1 javascript from expression");
 //     }
 
+
+
+
+
+//Difference between function statement and function expression
+// function statement are hoisted but function expression are not hoisted  
+
+
+
     //Named function expression   
 var getName1=function xyz(){
     console.log("namaste1 javascript from expression");
@@ -34,3 +43,12 @@ var getName1=function xyz(){
 
     //Anonymous function
 //anonymous function are used in a place where function are used as a value
+
+
+//differnce between parameter and argument
+var b=function(param1,param2){
+    console.log(param1+param2);
+}   
+
+b(10,20); //10,20 are arguments
+ 
