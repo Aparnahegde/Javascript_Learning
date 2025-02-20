@@ -1,14 +1,36 @@
     
-        getName();
-        // getName1();
-        console.log(x);
-        console.log(getName);
+    //     getName();
+    //     // getName1();
+    //     console.log(x);
+    //     console.log(getName);
 
-        var x=10;
-        function getName(){
-    console.log("namaste javascript"); 
-    }
+    //     var x=10;
+    //     function getName(){
+    // console.log("namaste javascript"); 
+    // }
 
-    var getName1=function (){
-        console.log("namaste1 javascript");
+    // var getName1=function (){
+    //     console.log("namaste1 javascript");
+    // }
+
+
+
+//function statement aka function declaration
+// function getName(){
+// console.log("namaste javascript from statement");
+// }
+
+
+// //function expression   
+// var getName1=function (){
+//     console.log("namaste1 javascript from expression");
+//     }
+
+    //Named function expression   
+var getName1=function xyz(){
+    console.log("namaste1 javascript from expression");
     }
+    getName1();
+
+    //Anonymous function
+//anonymous function are used in a place where function are used as a value
