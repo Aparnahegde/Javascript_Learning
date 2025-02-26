@@ -13,7 +13,15 @@
 
 
 //eventlistener
+// document.getElementById("clickme").addEventListener('click',function xyz(){
+//    alert('Button Clicked');
+// }); 
+
+
+//number time button clicked
+ let count = 0;
 document.getElementById("clickme").addEventListener('click',function xyz(){
-   alert('Button Clicked');
-}); 
+       console.log('Button Clicked '+ (++count) + ' times');
+    }); 
+    
 
