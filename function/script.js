@@ -28,8 +28,6 @@
 
 
 
-
-
 //Difference between function statement and function expression
 // function statement are hoisted but function expression are not hoisted  
 
