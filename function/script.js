@@ -53,4 +53,7 @@ b(10,20); //10,20 are arguments
 
 //First class function
 
+//function can be stored in a variable and returned from a function
+//function can be passed as an argument to another function 
+
  
