@@ -42,3 +42,5 @@ console.log(outputEven); // [2,4]
 
 const outputgreaterthan2=arr.filter((x)=>x>2)
 console.log(outputgreaterthan2); // [3,4,5]
+
+
