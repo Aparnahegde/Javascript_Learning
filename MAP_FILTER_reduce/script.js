@@ -43,21 +43,51 @@
 // const outputgreaterthan2=arr.filter((x)=>x>2)
 // console.log(outputgreaterthan2); // [3,4,5]
 
-const arr = [1,2,3,4,5];
-const sum=arr.reduce((acc,curr)=>acc+curr,0)
-console.log(sum); // 15     
+// const arr = [1,2,3,4,5];
+// const sum=arr.reduce((acc,curr)=>acc+curr,0)
+// console.log(sum); // 15     
 
-// const max=arr.reduce((acc,curr)=>Math.max(acc,curr),0)
-// console.log(max); // 5
+// // const max=arr.reduce((acc,curr)=>Math.max(acc,curr),0)
+// // console.log(max); // 5
 
-const output=arr.reduce(function(acc,curr){
-    if(acc<curr){
-        acc=curr;
+// const output=arr.reduce(function(acc,curr){
+//     if(acc<curr){
+//         acc=curr;
+//     }
+// return acc;
+// },0)
+// console.log(output); // 5   
+
+const users=[{firstName:'John',lastName:'Doe',age:30},
+    {firstName:'Jane',lastName:'Doe',age:25},
+    {firstName:'Jim',lastName:'Doe',age:20},
+    {firstName:'rim',lastName:'foe',age:20}];
+
+    const output=users.map((x)=>x.firstName+' '+x.lastName)
+    console.log(output); // ['John Doe','Jane Doe','Jim Doe']
+
+
+    const output1=users.reduce(function(acc,curr){
+        if(acc[curr.age]){
+            acc[curr.age]=++acc[curr.age];
+        }
+        else{
+            acc[curr.age]=1;
+        }
+        return acc;
+    },{});  
+    console.log(output1); // {20:2,25:1,30:1}
+
+    const output2=users.filter((x)=>x.age<25).map((x)=>x.firstName);
+console.log(output2); // ['Jim','rim']
+
+const output3=users.reduce(function(acc,curr){
+    if(curr.age<25){
+        acc.push(curr.firstName);
     }
-return acc;
-},0)
-console.log(output); // 5   
-
-
+    return acc;
+}
+,[]);
+console.log(output3); // ['Jim','rim']
 
 
