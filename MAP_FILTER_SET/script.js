@@ -19,3 +19,7 @@ console.log(output);
 
 const outputBinary=arr.map(binary)
 console.log(outputBinary);
+
+
+const outputsq=arr.map((x)=>x*2)
+console.log(outputsq);
