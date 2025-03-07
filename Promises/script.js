@@ -168,4 +168,9 @@ const p3=new Promise(function(resolve,reject){
     },2000);
 }   )
 
-Promise.any([p1,p2,p3]).then(res => console.log(res)).catch(err=>console.error(err));
+Promise.any([p1,p2,p3]).then(res => console.log(res))
+.catch(err=>{
+    console.error(err)
+    console.log(err.errors);
+}
+);
