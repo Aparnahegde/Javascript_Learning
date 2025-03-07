@@ -33,3 +33,10 @@ createOrder(cart).then(function(orderID){
     return updateWallet();
 });
 
+createOrder(cart).then(orderID=>proceedToPayment(orderID))
+.then(paymentID=>showSummary(paymentID))    
+.then(()=>updateWallet());
+
+
+
+
