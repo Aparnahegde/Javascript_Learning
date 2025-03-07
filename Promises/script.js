@@ -17,26 +17,42 @@
 //     console.log(data);
 // });
 
-createOrder(cart,function(orderID){
-    proceedToPayment(orderID,function(paymentID){
-        showSummary(paymentID,function(){
-            updateWallet();
-        });
-    });
-});
+// createOrder(cart,function(orderID){
+//     proceedToPayment(orderID,function(paymentID){
+//         showSummary(paymentID,function(){
+//             updateWallet();
+//         });
+//     });
+// });
 
-createOrder(cart).then(function(orderID){
-    return proceedToPayment(orderID);
-}).then(function(paymentID){
-    return showSummary(paymentID);
-}).then(function(){
-    return updateWallet();
-});
+// createOrder(cart).then(function(orderID){
+//     return proceedToPayment(orderID);
+// }).then(function(paymentID){
+//     return showSummary(paymentID);
+// }).then(function(){
+//     return updateWallet();
+// });
 
-createOrder(cart).then(orderID=>proceedToPayment(orderID))
-.then(paymentID=>showSummary(paymentID))    
-.then(()=>updateWallet());
+// createOrder(cart).then(orderID=>proceedToPayment(orderID))
+// .then(paymentID=>showSummary(paymentID))    
+// .then(()=>updateWallet());
 
+const p1=new Promise(function(resolve,reject){
+    setTimeout(function(){
+        resolve("Promise 1 resolved");
+    },3000);
+})
+const p2=new Promise(function(resolve,reject){
+    setTimeout(function(){
+        resolve("Promise 2 resolved");
+    },1000);
+})
+const p3=new Promise(function(resolve,reject){  
+    setTimeout(function(){
+        resolve("Promise 3 resolved");
+    },2000);
+}   )
 
+Promise.all([p1,p2,p3]).then(res => console.log(res));
 
 
